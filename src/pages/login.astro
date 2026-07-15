@@ -1,0 +1,22 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录 — 冯羽彤的学习基地</title>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-5">
+  <div id="login-root"></div>
+</body>
+</html>
+
+<script>
+  import { createRoot } from 'react-dom/client';
+  import React from 'react';
+  import LoginForm from '../components/LoginForm.tsx';
+  const el = document.getElementById('login-root');
+  if (el) createRoot(el).render(React.createElement(LoginForm));
+</script>

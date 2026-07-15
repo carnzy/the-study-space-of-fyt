@@ -1,0 +1,20 @@
+{
+  "name": "study-site",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.1",
+    "@supabase/supabase-js": "^2.110.5",
+    "@tailwindcss/vite": "^4.3.2",
+    "@uiw/react-md-editor": "^4.1.1",
+    "astro": "^7.0.9",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  }
+}

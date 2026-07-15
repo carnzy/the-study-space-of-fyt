@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #6366f1;
+    --color-primary-light: #818cf8;
+    --color-primary-dark: #4f46e5;
+    --color-bg: #f1f5f9;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-800 antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  }
+}
+
+/* 帖子内容 Markdown 渲染 */
+.post-content h1 { @apply text-2xl font-bold mt-6 mb-3; }
+.post-content h2 { @apply text-xl font-bold mt-5 mb-2; }
+.post-content h3 { @apply text-lg font-semibold mt-4 mb-2; }
+.post-content p { @apply mb-3 leading-relaxed; }
+.post-content img { @apply rounded-lg max-w-full my-2; }
+.post-content pre { @apply bg-slate-800 text-slate-100 p-4 rounded-lg overflow-x-auto my-3 text-sm; }
+.post-content code { @apply bg-slate-200 px-1.5 py-0.5 rounded text-sm; }
+.post-content pre code { @apply bg-transparent p-0; }
+.post-content blockquote { @apply border-l-4 border-indigo-400 pl-4 text-slate-600 my-3; }
+.post-content ul, .post-content ol { @apply ml-6 mb-3; }
+.post-content li { @apply mb-1; }
+.post-content table { @apply w-full border-collapse my-3; }
+.post-content th, .post-content td { @apply border border-slate-300 px-3 py-2 text-left; }
+.post-content th { @apply bg-slate-100 font-semibold; }
+.post-content hr { @apply my-6 border-slate-200; }
+.post-content a { @apply text-indigo-600 underline; }

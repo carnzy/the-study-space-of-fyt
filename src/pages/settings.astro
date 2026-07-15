@@ -1,0 +1,17 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <div id="app" class="max-w-lg mx-auto">
+  </div>
+</MainLayout>
+
+<script>
+  import { createRoot } from 'react-dom/client';
+  import React from 'react';
+  import SettingsPage from '../components/SettingsPage.tsx';
+
+  const el = document.getElementById('app');
+  if (el) createRoot(el).render(React.createElement(SettingsPage));
+</script>
